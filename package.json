@@ -2,6 +2,9 @@
   "name": "quick-run-debug-buttons",
   "displayName": "Quick Run and Debug Buttons",
   "description": "Quick Run and Debug Buttons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maikkundev/Quick-Run-and-Debug-Buttons.git"},
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
@@ -11,7 +14,7 @@
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
-  "icon": "$(debug-start)",
+  "icon": "./icons/icon.png",
   "contributes": {
     "commands": [
       {
