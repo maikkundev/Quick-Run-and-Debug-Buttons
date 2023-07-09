@@ -2,6 +2,7 @@
   "name": "quick-run-debug-buttons",
   "displayName": "Quick Run and Debug Buttons",
   "description": "Quick Run and Debug Buttons",
+  "publisher": "MaikkunDev",
   "repository": {
     "type": "git",
     "url": "https://github.com/maikkundev/Quick-Run-and-Debug-Buttons.git"},
