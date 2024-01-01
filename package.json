@@ -6,7 +6,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/maikkundev/Quick-Run-and-Debug-Buttons.git"},
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.80.0"
   },
