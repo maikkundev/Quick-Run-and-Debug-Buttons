@@ -2,12 +2,15 @@
 
 ## Features
 
-Adds two buttons to the editor toolbar: a Debug button (Green Arrow) and a Start without Debug button.
+Adds two buttons to the editor toolbar: a Green/Debug button and a Start/Gray button.
 
-The Debug button starts debugging your project.
-The Start button launches your project without debugging.
+You can configure what each button does in VSCode settings:
 
-You need to select a launch option from the "Run and Debug" section in the Activity Bar (CTRL + SHIFT + D / CMD + SHIFT + D)!
+- Debug
+- Run
+- Hide Button
+
+You need to select a launch option from the "Run and Debug" section in the Activity Bar (Ctrl/CMD + Shift + D)!
 
 ... And that's it.
 
