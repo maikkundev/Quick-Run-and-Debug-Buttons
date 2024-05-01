@@ -5,7 +5,8 @@
   "publisher": "MaikkunDev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/maikkundev/Quick-Run-and-Debug-Buttons.git"},
+    "url": "https://github.com/maikkundev/Quick-Run-and-Debug-Buttons.git"
+  },
   "version": "0.0.2",
   "engines": {
     "vscode": "^1.80.0"
@@ -13,33 +14,82 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "*"
+  ],
   "main": "./out/extension.js",
   "icon": "./icons/icon.png",
   "contributes": {
     "commands": [
       {
-        "command": "quick-run-debug-buttons.debugButton",
-        "title": "Start Debugging",
+        "command": "quick-run-debug-buttons.debugButtonDebug",
+        "title": "QRD: Debug",
         "icon": "$(debug-start)"
       },
       {
-        "command": "quick-run-debug-buttons.runButton",
-        "title": "Start Without Debugging",
+        "command": "quick-run-debug-buttons.debugButtonRun",
+        "title": "QRD: Run",
+        "icon": "$(debug-start)"
+      },
+      {
+        "command": "quick-run-debug-buttons.runButtonDebug",
+        "title": "QRD: Debug",
+        "icon": "$(play)"
+      },
+      {
+        "command": "quick-run-debug-buttons.runButtonRun",
+        "title": "QRD: Run",
         "icon": "$(play)"
       }
     ],
     "menus": {
       "editor/title": [
         {
-          "command": "quick-run-debug-buttons.debugButton",
-          "group": "navigation"
+          "command": "quick-run-debug-buttons.debugButtonDebug",
+          "group": "navigation",
+          "when": "debugButtonAction == 'debug'"
         },
         {
-          "command": "quick-run-debug-buttons.runButton",
-          "group": "navigation"
+          "command": "quick-run-debug-buttons.debugButtonRun",
+          "group": "navigation",
+          "when": "debugButtonAction == 'run'"
+        },
+        {
+          "command": "quick-run-debug-buttons.runButtonDebug",
+          "group": "navigation",
+          "when": "runButtonAction == 'debug'"
+        },
+        {
+          "command": "quick-run-debug-buttons.runButtonRun",
+          "group": "navigation",
+          "when": "runButtonAction == 'run'"
         }
       ]
+    },
+    "configuration": {
+      "title": "Quick Run and Debug Buttons",
+      "properties": {
+        "quick-run-debug-buttons.debugButton": {
+          "type": "string",
+          "default": "debug",
+          "enum": [
+            "debug",
+            "run",
+            "hide"
+          ],
+          "description": "Action to perform when the green play button is clicked (requires extension restart)."
+        },
+        "quick-run-debug-buttons.runButton": {
+          "type": "string",
+          "default": "run",
+          "enum": [
+            "debug",
+            "run",
+            "hide"
+          ],
+          "description": "Action to perform when the gray play button is clicked (requires extension restart)."
+        }
+      }
     }
   },
   "scripts": {
