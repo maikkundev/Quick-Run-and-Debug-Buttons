@@ -12,6 +12,6 @@
 
 - User can now define what each button does (Debug, Run or Hide). Can be configured in VSCode Settings (Ctrl/CMD + ,).
 
-## [0.1.1]
+## [0.1.2]
 
 - Changed the Green Play button with the Debug button.
