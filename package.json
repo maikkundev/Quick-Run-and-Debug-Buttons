@@ -24,12 +24,12 @@
       {
         "command": "quick-run-debug-buttons.debugButtonDebug",
         "title": "QRD: Debug",
-        "icon": "$(debug-start)"
+        "icon": "$(debug)"
       },
       {
         "command": "quick-run-debug-buttons.debugButtonRun",
         "title": "QRD: Run",
-        "icon": "$(debug-start)"
+        "icon": "$(debug)"
       },
       {
         "command": "quick-run-debug-buttons.runButtonDebug",
