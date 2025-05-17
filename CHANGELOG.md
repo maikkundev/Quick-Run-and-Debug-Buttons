@@ -20,3 +20,4 @@
 
 - Revert customization changes to the buttons.
 - Update extension dependencies.
+- Better performance?
