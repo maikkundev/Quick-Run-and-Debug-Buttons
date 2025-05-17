@@ -15,3 +15,8 @@
 ## [0.1.2]
 
 - Changed the Green Play button with the Debug button.
+
+## [0.2.0]
+
+- Revert customization changes to the buttons.
+- Update extension dependencies.
